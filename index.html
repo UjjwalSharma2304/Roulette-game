@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roulette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="wheel.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: 'Press Start 2P', monospace;
+            background-image: url('roulette.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main-box {
+            opacity: 0.8;
+            background-color: #aa234c;
+            width: 90%;
+            max-width: 425px;
+            height: auto;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 40px;
+            border-style: solid;
+            box-sizing: border-box;
+        }
+
+        input[type="number"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 30px;
+            font-family: 'Press Start 2P', monospace;
+            color: maroon;
+            font-size: 10px;
+            border-radius: 10px;
+        }
+
+        h1, h3, label {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <h1><u>Roulette</u></h1>
+        <h3 id="tries">TRIES: 0</h3>
+        <h1 id="win">---------</h1>
+        <label for="input">Choose your number between 1-10</label>
+        <br><br>
+        <input id="input" type="number" min="1" max="10">
+        <h1 id="number">0</h1>
+        <button id="roll">Roll</button>
+    </div>
+    <script src="roulette.js"></script>
+</body>
+</html>
